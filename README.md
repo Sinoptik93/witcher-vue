@@ -21,3 +21,8 @@ npm run serve
 ```
 npm run build
 ```
+
+### Storybook
+```
+npm run storybook
+```
