@@ -1,0 +1,57 @@
+@import "variables";
+
+@mixin buttonDefault () {
+  padding: 14px 31px;
+
+  font-family: $font-button;
+  font-size: 16px;
+  color: $color-font-button;
+  white-space: nowrap;
+
+  background-color: $color-button-bg-default;
+  border: 1px solid $color-button-bg-accent;
+
+  cursor: pointer;
+  transition: background-color $transition, box-shadow $transition;
+
+  &:hover {
+    background-color: $color-button-bg-active;
+    box-shadow: 0 2px 24px rgba(255, 30, 30, 0.5);
+  }
+}
+
+@mixin heading() {
+  font-family: $font-text, serif;
+  font-weight: 600;
+  color: $color-font-default;
+
+  h1 {
+    margin: 0;
+
+    font-size: 56px;
+    line-height: 56px;
+
+    @media (max-width: $breakpointMd) {
+      font-size: 40px;
+    }
+
+    @media (max-width: $breakpointSm) {
+      font-size: 32px;
+    }
+  }
+
+  h2 {
+    margin: 0;
+
+    font-size: 40px;
+    line-height: 48px;
+
+    @media (max-width: $breakpointMd) {
+      font-size: 32px;
+    }
+
+    @media (max-width: $breakpointSm) {
+      font-size: 28px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-background;
+}
+
+.container {
+  width: 100%;
+  max-width: $containerLg;
+
+  margin: 0 auto;
+  padding: 0 20px;
+
+  //background-color: red;
+
+  @media (max-width: $breakpointMd) {
+    max-width: $containerMd;
+    //background-color: green;
+  }
+
+  @media (max-width: $breakpointSm) {
+    max-width: $containerSm;
+    //background-color: blue;
+  }
+}
